@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Step 1: Landing Page with Animation and Input -->
+  <div id="landing-page">
+    <a href="#" id="center-animation">🔗 Click Me!</a>
+    <br>
+    <label for="code-input">Enter Code:</label>
+    <input type="text" id="code-input" placeholder="Enter code">
+    <button id="code-submit">Submit</button>
+  </div>
+
+  <!-- Step 2: After Code Validation -->
+  <div id="game-step" style="display: none;">
+    <div class="animation-container">
+      <div class="animation" id="animation1">🎲</div>
+      <div class="animation" id="animation2">🎲</div>
+      <div class="animation" id="animation3">🎲</div>
+    </div>
+  </div>
+
+  <!-- Step 3: After Animations -->
+  <div id="final-step" style="display: none;">
+    <label for="final-input">Enter Text:</label>
+    <input type="text" id="final-input" placeholder="Type here">
+    <button id="final-submit">Finish</button>
+    <div id="final-message" style="display: none;">
+      <p>🎉 Interaction Complete!</p>
+      <div id="final-animation">🌟</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
