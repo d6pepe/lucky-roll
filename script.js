@@ -38,6 +38,6 @@ animations.forEach((animation) => {
 
 // Final submission logic
 finalSubmit.addEventListener("click", () => {
-  finalStep.style.display = "none";
+  finalStep.style.display = "Interaction complete";
   finalMessage.style.display = "block";
 });
