@@ -36,8 +36,14 @@ animations.forEach((animation) => {
   });
 });
 
-// Final submission logic
+
+// Elements
+const finalStep = document.getElementById("final-step");
+const finalMessage = document.getElementById("final-message");
+const finalSubmit = document.getElementById("final-submit");
+
+// Final text submission event listener
 finalSubmit.addEventListener("click", () => {
-  finalStep.style.display = "Interaction complete";
-  finalMessage.style.display = "block";
+  finalStep.style.display = "none";  // Hide the final input form
+  finalMessage.style.display = "block";  // Show the "Interaction Complete!" message
 });
